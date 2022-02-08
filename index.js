@@ -33,7 +33,13 @@ class SortedList {
     else{ return this.items[0];}
   }
 
-  sum() {}
+  sum() {
+    let sum = 0;
+    if(this.length === 0){return 0;}
+    else { this.items.forEach(x => { sum += x;}); }
+    //this.items.forEach( () => Element += sum );
+    return sum;
+  }
 
   avg() {}
 }
